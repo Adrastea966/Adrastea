@@ -1,26 +1,29 @@
 import React from "react";
-import './NavBar.css';
+import './StylesEcommerce.css';
+import CartWidget from './CartWidget';
 
 const NavBar = ()=> {
     return(
         <div className="container-navbar">
             <div className="logo">
-                <img src=" ../vestidoRojoLogoMomentaneo.png" />
+                <img className="img-logo" src=" ../vestidoRojoLogoMomentaneo.png" />
                 <h2>ADRASTEA</h2>
             </div>
             <div className="menu">
                 <ul className="lista-menu">
-                    <li className="item-menu">
+                    <li className="item-menu item-menu-li">
                         <a href="#">HOME</a>
                     </li>
-                    <li className="item-menu">
-                        <a href="#">NOSOTROS</a>
+                    <li className="item-menu item-menu-li">
+                        <a href="#">PORTFOLIO</a>
                     </li>
-                    <li className="item-menu">
+                    <li className="item-menu item-menu-li">
                         <a href="#">CONTACTO</a>
                     </li>
                     <li className="item-menu">
-                        <a href="#">TIENDA</a>
+                        <a href="#">
+                        <CartWidget />
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -28,4 +31,4 @@ const NavBar = ()=> {
     );
 }
 
-export default NavBar
+export default NavBar;

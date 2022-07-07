@@ -20,10 +20,6 @@ ul {
     list-style-type: none;
 }
 
-img{
-    width: 40px;
-}
-
 h2{
     font-size: 2em;
 }
@@ -34,15 +30,20 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     background-color: #ffffff;
-    padding: 10px 40px;
+    padding: 1rem 4rem;
     margin: 0 auto;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.108);
 }
+
 .logo{
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 0.5rem;
+}
+
+.img-logo{
+    width: 4rem;
 }
 
 .menu{
@@ -53,7 +54,27 @@ h2{
 .lista-menu{
     display:flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 2.5rem;
     font-size: 1.6em;
+}
+
+.item-menu-li{
+    padding-top: 1.5rem;
+}
+
+.item-menu-li :hover {
+    color: rgb(214, 214, 214);
+    transition: ease-in-out 0.3s;
+}
+
+.img-shop{
+    align-items: center;
+    width: 5rem;
+}
+
+.container-span{
+    font-size: 3em;
+    position:absolute;
+    transform: translate(15%,60%);
 }
 
