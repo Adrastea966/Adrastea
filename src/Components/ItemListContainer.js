@@ -1,10 +1,17 @@
 import React from "react";
 import './StylesEcommerce.css';
+import ItemCount from "./ItemCount";
 
-const ItemListContainer = ({greeting}) => {
+// Función para renderizar los productos
+export const ItemListContainer = ({ greating }) => {
+
+    const onAdd = () => {console.log("Se agregó al carrito correctamente")}
+
     return(
-        <span className="container-span">{greeting}</span>
+        <>
+        <div>{greating}</div>
+        <ItemCount initial={1} stock={10} onAdd={onAdd} />
+        </>
     );
 }
 
-export default ItemListContainer;

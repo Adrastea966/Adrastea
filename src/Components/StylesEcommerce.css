@@ -1,3 +1,4 @@
+/* Normalize */
 *,
 *::after,
 *::before {
@@ -6,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* Global styles */
 html {
     font-size: 62.5%;
     color: black;
@@ -24,6 +26,7 @@ h2{
     font-size: 2em;
 }
 
+/* Navbar styles */
 .container-navbar{
     top: 0;
     display:flex;
@@ -72,9 +75,30 @@ h2{
     width: 5rem;
 }
 
-.container-span{
-    font-size: 3em;
-    position:absolute;
-    transform: translate(15%,60%);
+/* ItemCount styles */
+.counter{
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    margin-left: 3rem;
+}
+
+.counter-number{
+    padding: 0.5rem 1rem;
+    border: solid black 0.1rem;
+}
+
+.add-subtract{
+    padding: 0.5rem 1rem;
+}
+
+.add-to-cart{
+    padding: 1rem ;
+    border: solid black 0.1rem;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 3rem;
 }
 
