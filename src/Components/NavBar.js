@@ -7,7 +7,6 @@ const NavBar = ()=> {
     return(
         <div className="container-navbar">
             <div className="logo">
-                <img className="img-logo" src=" ../vestidoRojoLogoMomentaneo.png" />
                 <h2>ADRASTEA</h2>
             </div>
             <div className="menu">
@@ -16,7 +15,10 @@ const NavBar = ()=> {
                         <a href="#">HOME</a>
                     </li>
                     <li className="item-menu item-menu-li">
-                        <a href="#">PORTFOLIO</a>
+                        <a href="#">BODAS</a>
+                    </li>
+                    <li className="item-menu item-menu-li">
+                        <a href="#">EVENTOS</a>
                     </li>
                     <li className="item-menu item-menu-li">
                         <a href="#">CONTACTO</a>
