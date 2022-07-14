@@ -2,11 +2,13 @@ import React from "react";
 import '../styles/StylesEcommerce.css';
 import { InfoContainer, Info, Contenido, ContenidoNombreVestido } from "./styles";
 
+
 const Item = ({info}) => {
     return(
-        
         <InfoContainer style={{cursor: "pointer"}}>
-            <img className="img-dress" src={info.image} alt="" />
+            <div>
+                <img className="img-dress" src={info.image} alt="" />
+            </div>
             <Info>
                 <ContenidoNombreVestido>
                     <img src={info.img} />
@@ -19,7 +21,6 @@ const Item = ({info}) => {
                 </Contenido>
             </Info>
         </InfoContainer>
-        
     );
 }
 

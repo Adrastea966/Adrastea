@@ -25,6 +25,7 @@ const InfoContainer = styled.div`
     &:hover ${Info}{
         opacity: 1;
     }
+    transition: all 500ms ease;
 `;
 
 const Contenido = styled.div`
@@ -34,7 +35,7 @@ const Contenido = styled.div`
     font-size: 1.4em;
     width: 22rem;
     margin-bottom: 1.5rem;
-    margin-left:6rem;
+    margin-left:4rem;
     color: white;
     transition: all 0.6s ease;
 `;
@@ -43,5 +44,6 @@ const ContenidoNombreVestido = styled.div`
     padding-top: 5rem;
     padding-bottom: 3rem;
 `
+
 
 export {DressesContainer, Info, InfoContainer, Contenido, ContenidoNombreVestido } 
