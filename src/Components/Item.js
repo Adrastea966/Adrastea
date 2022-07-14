@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/StylesEcommerce.css';
-import { InfoContainer, Info, Contenido, ContenidoNombreVestido } from "./styles";
+import { InfoContainer, Info, Contenido, ContenidoNombreVestido} from "./styles";
 
 
 const Item = ({info}) => {
@@ -19,6 +19,9 @@ const Item = ({info}) => {
                 <Contenido>
                     <p>{info.description}</p>
                 </Contenido>
+                <div className="container-button">
+                    <button className="btn"type="button">AGREGAR AL CARRITO</button>
+                </div>
             </Info>
         </InfoContainer>
     );

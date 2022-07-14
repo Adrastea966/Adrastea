@@ -8,7 +8,9 @@ function App() {
     <div>
       <header>
         <NavBar /> 
-        <img className="banner" src={banner} />
+        <div>
+          <img className="banner" src={banner} />
+        </div>
         <img className="favoritos" src={favoritos} />
         <ItemListContainer />
       </header>

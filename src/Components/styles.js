@@ -34,7 +34,7 @@ const Contenido = styled.div`
     aling-items: center;
     font-size: 1.4em;
     width: 22rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     margin-left:4rem;
     color: white;
     transition: all 0.6s ease;
@@ -42,7 +42,7 @@ const Contenido = styled.div`
 
 const ContenidoNombreVestido = styled.div`
     padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 `
 
 
