@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import './StylesEcommerce.css';
+import '../styles/StylesEcommerce.css';
 
 // Función para añadir más cantidad de productos y agregar al carrito
 const ItemCount = ({initial, stock, onAdd}) => {
@@ -7,31 +7,23 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
     // Sumar productos al carro teniendo en cuenta el stock
     const add = () => {
-        if (counter < stock){
-            setCounter(counter +1)
-        }else{
-            console.log("No hay más stock disponible")
-        }
+       setCounter(counter +1)
     }
 
     // Restar productos al carro teniendo en cuenta la cantidad mínima de productos
     const subtract = () =>{
-        if (counter > initial){
-            setCounter(counter -1)
-        }else{
-            console.log("Esta es la unidad mínima")
-        }
+       setCounter(counter -1)
     }
 
     // Renderizar
     return(
         <div>
             <div className="counter">
-                <button className="add-subtract" onClick={subtract}>-</button>
+                <button className="add-subtract" disabled={counter <=1} onClick={subtract}>-</button>
                 <p className="counter-number"><strong>{counter}</strong></p>
-                <button className="add-subtract" onClick={add}>+</button>
+                <button className="add-subtract" disabled={counter >=stock} onClick={add}>+</button>
             </div>
-            <button className="add-to-cart"onClick={onAdd}>Agregar al carrito</button>
+            <button className="add-to-cart" disabled={stock <=0} onClick={() => onAdd(counter)}>Agregar al carrito</button>
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import './StylesEcommerce.css';
+import '../styles/StylesEcommerce.css';
 import CartWidget from './CartWidget';
 
 // Función para renderizar el navbar 

@@ -1,5 +1,5 @@
 import React from "react";
-import './StylesEcommerce.css';
+import '../styles/StylesEcommerce.css';
 import { Badge } from '@mui/material';
 
 const CartWidget = ()=> {
