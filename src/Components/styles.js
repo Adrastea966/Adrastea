@@ -41,8 +41,8 @@ const Contenido = styled.div`
 `;
 
 const ContenidoNombreVestido = styled.div`
-    padding-top: 5rem;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
 `
 
 

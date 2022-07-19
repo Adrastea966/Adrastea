@@ -10,6 +10,9 @@ const Item = ({info}) => {
                 <img className="img-dress" src={info.image} alt="" />
             </div>
             <Info>
+                <div className="btn-detail">
+                    <button type="button">Detalle</button>
+                </div>
                 <ContenidoNombreVestido>
                     <img src={info.img} />
                 </ContenidoNombreVestido>

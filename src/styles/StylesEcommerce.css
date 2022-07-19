@@ -94,7 +94,6 @@ h2{
     padding-top: 4rem;
     padding-bottom: 1rem;
     gap: 1rem;
-    margin-left: 3rem;
 }
 
 .counter-number{
@@ -104,14 +103,24 @@ h2{
 
 .add-subtract{
     padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .add-to-cart{
-    padding: 1rem ;
-    border: solid black 0.1rem;
+    margin-top: 1.3rem;
+}
+
+.add-to-cart :hover{
+    background-color:  rgb(199, 203, 255);
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.add-to-cart-btn{
+    padding: 1.2rem ;
     background-color: white;
+    border: solid rgb(228, 228, 228) 0.1rem;
     cursor: pointer;
-    margin-left: 3rem;
 }
 
 /* Item styles */
@@ -140,14 +149,45 @@ h2{
    transition: ease-in-out 0.3s;
    font-weight: 600;
 }
-    
 
+/* ItemDetail styles */
+.container-details-page{
+    display:flex;
+    justify-content: center;
+    margin: 0 auto;
+}
 
+.container-detail{
+    display:flex;
+    justify-content: center;
+    gap: 10rem;
+    width: 115rem;
+    padding: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.215);
+}
 
+.container-info-agregar{
+    display:flex;
+    flex-direction: column;
+}
 
+.img-detail{
+    width: 30rem;
+}
 
+.div-title{
+    font-size: 1.7em;
+}
 
+.div-description{
+    width: 45rem;
+    margin-top: 5rem;
+    font-size: 2em;
+}
 
-
-
-
+.div-price{
+    margin-top: 3rem;
+    font-size: 2em;
+}
