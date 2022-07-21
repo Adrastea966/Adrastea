@@ -214,3 +214,12 @@ h2{
     margin-top: 3rem;
     font-size: 2em;
 }
+
+/* Cart styles */
+
+.cart{
+    height: 80rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

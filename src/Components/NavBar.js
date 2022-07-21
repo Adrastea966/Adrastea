@@ -25,9 +25,9 @@ const NavBar = ()=> {
                         <a href="#footer">CONTACTO</a>
                     </li>
                     <li className="item-menu">
-                        <a href="#">
+                        <Link to="/cart">
                         <CartWidget />
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
