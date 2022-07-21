@@ -10,13 +10,13 @@ const ItemDetail = ({data}) => {
 
     return(
         <div className="container-details-page">
-            <div className="container-detail">
+        <div className="container-detail">
             <div className="img-detail-container">
                 <img className="img-detail" src={data.image}/>
             </div>
             <div className="container-info-agregar">
                 <div className="div-title">
-                    <h1>Vestido Afrodita</h1>
+                    <h1>{data.title}</h1>
                 </div>
                 <div className="div-description">
                     <p>{data.description}</p>

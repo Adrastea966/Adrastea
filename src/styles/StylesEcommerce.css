@@ -11,6 +11,7 @@
 html {
     font-size: 62.5%;
     color: black;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -74,6 +75,24 @@ h2{
 .img-shop{
     align-items: center;
     width: 5rem;
+}
+
+/* Footer styles */
+.container-footer{
+    height: 20rem;
+    margin-top: 5rem;
+    background-color: rgb(0, 0, 0);
+}   
+
+.copy-footer{
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 /* Banner styles */
@@ -154,7 +173,7 @@ h2{
 .container-details-page{
     display:flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 15rem auto;
 }
 
 .container-detail{
@@ -179,6 +198,10 @@ h2{
 
 .div-title{
     font-size: 1.7em;
+}
+
+.btn-detail{
+    cursor: pointer;
 }
 
 .div-description{

@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/StylesEcommerce.css';
 import { InfoContainer, Info, Contenido, ContenidoNombreVestido} from "./styles";
+import {Link} from "react-router-dom";
 
 
 const Item = ({info}) => {
@@ -10,8 +11,8 @@ const Item = ({info}) => {
                 <img className="img-dress" src={info.image} alt="" />
             </div>
             <Info>
-                <div className="btn-detail">
-                    <button type="button">Detalle</button>
+                <div>
+                   <Link to={`/item/${info.id}`}><button className="btn-detail" type="button">Detalle</button></Link> 
                 </div>
                 <ContenidoNombreVestido>
                     <img src={info.img} />

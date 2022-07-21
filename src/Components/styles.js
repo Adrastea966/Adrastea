@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const DressesContainer = styled.div`
     padding: 5rem;
+    margin-top: 10rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

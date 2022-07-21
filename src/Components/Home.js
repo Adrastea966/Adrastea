@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from "react";
-import ItemDetail from "./ItemDetail"
-import {useParams} from "react-router";
+import '../styles/StylesEcommerce.css';
+import banner from '../BannerEcommerce.svg';
+import favoritos from '../Favoritos.svg';
+import ItemList from "./ItemList";
 
-const dress = [
-    {id: 1, title: "Vestido Afrodita", "price": 380, image: "https://res.cloudinary.com/adrastea/image/upload/v1657821290/EcommerceAdrastea/vestido1_ejqtbp.png", description: "Vestido talla XS hecho con microtul color rosa viejo, encaje de guipur y bordados. Las medidas son busto: 85 cm, cintura 65 cm, cadera 93 cm."},
+const dressesEvents= [
+    { id: 1, title: "Vestido Afrodita", category:"Eventos", price: 380, image: "https://res.cloudinary.com/adrastea/image/upload/v1657821290/EcommerceAdrastea/vestido1_ejqtbp.png", description: "Vestido Afrodita. Hecho con microtul, encaje de guipur y bordados." , img: "https://res.cloudinary.com/adrastea/image/upload/v1658355249/EcommerceAdrastea/afroditaName_vpofci.svg"}, 
     { id: 2, title: "Vestido Harmonía", category:"Eventos", price: 300, image: "https://res.cloudinary.com/adrastea/image/upload/v1657821293/EcommerceAdrastea/vestido2_orbil8.png", description: "Vestido Harmonía. Hecho con gasa cristal, tajo frontal, corset con detalles bordados y posee mangas desmontables." , img: "https://res.cloudinary.com/adrastea/image/upload/v1658355249/EcommerceAdrastea/harmon%C3%ADaName_kksajo.svg"}, 
     { id: 3, title: "Vestido Rea", category:"Eventos", price: 350, image: "https://res.cloudinary.com/adrastea/image/upload/v1657821295/EcommerceAdrastea/vestido3_pcdqcw.png", description: "Vestido Rea. Hecho con 3 capas de microtul. Posee corset corte princesa y bordados." , img: "https://res.cloudinary.com/adrastea/image/upload/v1658355253/EcommerceAdrastea/reaName_xbesel.svg"},
     { id: 4, title: "Vestido Selene", category:"Eventos", price: 350, image: "https://res.cloudinary.com/adrastea/image/upload/v1657821295/EcommerceAdrastea/vestido4_byqqak.png", description: "Vestido Selene. Hecho con saten y microtul. Posee un hermoso encaje de guipur." , img: "https://res.cloudinary.com/adrastea/image/upload/v1658355251/EcommerceAdrastea/seleneName_r8zcn3.svg"},
@@ -27,26 +29,32 @@ const dress = [
     { id: 22, title: "Vestido Margarita", category:"Bodas", price: 500, image: "https://res.cloudinary.com/adrastea/image/upload/v1658345798/EcommerceAdrastea/vestido22_ktfqmg.png", description: "Vestido Margarita." , img: "https://res.cloudinary.com/adrastea/image/upload/v1658373388/EcommerceAdrastea/margaritaName_a6k08b.svg"},
     { id: 23, title: "Vestido Orquídea", category:"Bodas", price: 580, image: "https://res.cloudinary.com/adrastea/image/upload/v1658345796/EcommerceAdrastea/vestido23_jhhqun.png", description: "Vestido Orquídea." , img: "https://res.cloudinary.com/adrastea/image/upload/v1658373388/EcommerceAdrastea/orquideaName_pveidl.svg"},
     { id: 24, title: "Vestido Bell", category:"Bodas", price: 600, image: "https://res.cloudinary.com/adrastea/image/upload/v1658345791/EcommerceAdrastea/vestido24_fsb4hw.png", description: "Vestido Bell." , img: "https://res.cloudinary.com/adrastea/image/upload/v1658373387/EcommerceAdrastea/bellName_ydmgm0.svg"}
-    ]  
-
-const ItemDetailContainer = () => {
-
-    const [data, setData] = useState([]);
-    const {detalleId} = useParams();
+];
 
 
+const Home = () => {
+
+    const [data, setData]  = useState([]);
+   
     useEffect(() => {
         const getData = new Promise(resolve => {
-            setTimeout(() => {
-                resolve(dress);
-            }, 2000)
-        });
-        getData.then(res => setData(res.find(dress => dress.id === parseInt(detalleId))));
-    }, [])
+                setTimeout(() => {
+                    resolve(dressesEvents);
+                }, 2000)
+            });
+            getData.then(res => setData(res));
+    }, []);
+
 
     return(
-        <ItemDetail data={data} />
+        <>
+            <div>
+                <img className="banner" src={banner} />
+            </div>
+            <img className="favoritos" src={favoritos} />
+            <ItemList data={data} />
+        </>
     );
 }
 
-export default ItemDetailContainer;
+export default Home;
