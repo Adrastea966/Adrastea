@@ -1,11 +1,12 @@
 # Proyecto de React - ADRASTEA
 ### Alumna: Eliana Ballian.
+### Comisión: 31225.
 
-## ¡¡Bienvenidos a mi proyecto!! te invito a leer como lo fui planificando y todo lo que usé para lograrlo 💖
+## ¡¡Bienvenidos a mi proyecto!! los invito a leer como lo fui planificando y todo lo que usé para lograrlo 💖
 
 Este proyecto tiene el objetivo de simular un ecommerce, una tienda online de ropa. 
-Mi idea es vender vestidos de alta costura, que sean fantasiosos pero elegantes y delicados a la vez, un punto medio entre lo clásico y lo extravagante. Por ello decidí llamar la tienda "ADRASTEA", una diosa de la mitología griega y a la vez es el nombre de unas de las lunas de Júpiter, de aquí viene la unión entre lo fantasioso (con temáticas de espacio) y lo delicado (haciendo referencia a la mitología griega), este concepto también es acompañado con los colores elegidos (tonalidades de beige con tonalidades del azul), la tipografía y las imagenes. 
-Cada vestido tiene asignado un nombre, los vestidos de eventos poseen nombres de diosas griegas y romanas. En camnbio, los vestidos de bodas poseen nombres de flores blancas. Cada cuál tiene asignado un nombre en relación con su significado y el diseño del vestido.
+Mi idea es vender vestidos de alta costura, que sean fantasiosos pero elegantes y delicados a la vez, un punto medio entre lo clásico y lo extravagante. Por ello decidí llamar la tienda "ADRASTEA", una diosa de la mitología griega, que a la vez es el nombre de unas de las lunas de Júpiter, de aquí viene la unión entre lo fantasioso (con temáticas de espacio) y lo delicado (haciendo referencia a la mitología griega), este concepto también es acompañado con los colores elegidos (tonalidades de beige con tonalidades del azul), la tipografía y las imagenes. 
+Cada vestido tiene asignado un nombre, los vestidos de eventos poseen nombres de diosas griegas y romanas. En cambio, los vestidos de bodas poseen nombres de flores blancas. Cada cuál tiene asignado un nombre en relación con su significado y el diseño del vestido.
 
 ## Dependecias instaladas (externas a las clases)
 
