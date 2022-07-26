@@ -1,14 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import '../styles/StylesEcommerce.css';
 import ItemCount from "./ItemCount";
+import {Link} from "react-router-dom";
 
 const ItemDetail = ({data}) => {
 
-    const onAdd = (cantidad) => {
-        console.log(`Compraste ${cantidad} unidades`);
+    const [cart, setCart] = useState(false);
+
+    const onAdd = () => {
+        setCart(true);
     }
 
     return(
+        
         <div className="container-details-page">
         <div className="container-detail">
             <div className="img-detail-container">
@@ -24,8 +28,11 @@ const ItemDetail = ({data}) => {
                 <div className="div-price">
                     <p><strong>{"Precio: "+data.price+" USD"}</strong></p>
                 </div>
-                <div>
-                    <ItemCount initial={1} stock={10} onAdd={onAdd} />
+                <div className="div-cart-button">
+                    {   cart
+                        ? <button className="div-cart-detail-btn" type="button" ><Link to="/cart">Finalizar compra</Link></button>
+                        : <ItemCount initial={1} stock={10} onAdd={onAdd} />
+                    }
                 </div>
             </div>
         </div>

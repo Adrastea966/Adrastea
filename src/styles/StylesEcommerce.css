@@ -215,6 +215,17 @@ h2{
     font-size: 2em;
 }
 
+.div-cart-button{
+    margin-top: 2rem;
+}
+
+.div-cart-detail-btn{
+    padding: 1.2rem ;
+    background-color: white;
+    border: solid rgb(228, 228, 228) 0.1rem;
+    cursor: pointer;
+}
+
 /* Cart styles */
 
 .cart{
