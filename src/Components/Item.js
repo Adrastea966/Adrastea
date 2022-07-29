@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 
 
 const Item = ({info}) => {
+
     return(
         <InfoContainer style={{cursor: "pointer"}}>
             <div>
