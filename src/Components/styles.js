@@ -48,33 +48,36 @@ const ContenidoNombreVestido = styled.div`
 
 //Carrito
 const ContenedorPrincipal = styled.div`
-    padding: 100px;
-    margin-top: 120px;
+    padding: 10rem;
+    margin: 0 auto;
 `;
 
-const TitleCart = styled.h1`
-    font-weight: 300;
+const NombreCarrito = styled.h1`
+    font-weight: 500;
     text-align: center;
+    margin-bottom: 10rem;
 `;
 
 const ContentCart = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 `;
 
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
+  gap: 10rem;
 `;
 
 const ProductDetail = styled.div`
-  flex: 2;
   display: flex;
 `;
 
 const ImageCart = styled.img`
   width: 200px;
+  
 `;
 
 const Details = styled.div`
@@ -110,4 +113,4 @@ const ProductAmount = styled.div`
 
 
 
-export {DressesContainer, Info, InfoContainer, Contenido, ContenidoNombreVestido, ContenedorPrincipal, ProductAmountContainer, ProductAmount, TitleCart, ContentCart, Product, ProductDetail, ImageCart, Details, PriceDetail, ProductPrice   } 
+export {DressesContainer, Info, InfoContainer, Contenido, ContenidoNombreVestido, ContenedorPrincipal, ProductAmountContainer, ProductAmount, NombreCarrito, ContentCart, Product, ProductDetail, ImageCart, Details, PriceDetail, ProductPrice   } 

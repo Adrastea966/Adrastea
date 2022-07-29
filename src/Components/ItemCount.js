@@ -7,9 +7,14 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
     // Sumar productos al carro teniendo en cuenta el stock
     const add = () => {
-       setCounter(counter +1)
-    }
-
+        if (counter < stock) {
+          const aux = counter + 1;
+          setCounter(aux);
+        } else {
+          console.log("No hay mas stock");
+        }
+      };
+    
     // Restar productos al carro teniendo en cuenta la cantidad mínima de productos
     const subtract = () =>{
        setCounter(counter -1)
@@ -19,7 +24,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
     return(
         <div>
             <div className="counter">
-                <button className="add-subtract" disabled={counter <=1} onClick={subtract}>-</button>
+                <button className="add-subtract" disabled={counter <=0} onClick={subtract}>-</button>
                 <p className="counter-number"><strong>{counter}</strong></p>
                 <button className="add-subtract" disabled={counter >=stock} onClick={add}>+</button>
             </div>
@@ -31,3 +36,8 @@ const ItemCount = ({initial, stock, onAdd}) => {
 }
 
 export default ItemCount;
+
+
+
+  
+   

@@ -6,14 +6,16 @@ import { CartContext } from "./CartContext";
 
 const ItemDetail = ({data}) => {
 
-    const [cart, setCart] = useState(false);
+    const [itemCount, setItemCount] = useState(0);
     const test = useContext(CartContext)
-    const { addToCart  } = useContext(CartContext);
+
 
     const onAdd = (quantity) => {
-        setCart(true);
-        addToCart(data, quantity)
-        test.addToCart(data)
+        quantity > 0
+            ? console.log(`Compraste ${quantity} unidades`)
+            : console.log(`Agregue un producto para poder agregar al carrito`);
+            setItemCount(quantity);
+        test.addToCart(data, quantity);
     }
 
     return(
@@ -34,10 +36,13 @@ const ItemDetail = ({data}) => {
                     <p><strong>{"Precio: "+data.price+" USD"}</strong></p>
                 </div>
                 <div className="div-cart-button">
-                    {   cart
-                        ? <button className="div-cart-detail-btn" type="button" ><Link to="/cart">Finalizar compra</Link></button>
-                        : <ItemCount initial={1} stock={10} onAdd={onAdd} />
-                    }
+                    {itemCount === 0 ? (
+                        <ItemCount initial={itemCount} stock={10} onAdd={onAdd} />
+                        )
+                        : 
+                        (<Link to="/cart">
+                             <button className="itemCheckout">Finalizar compra</button>
+                         </Link>)}
                 </div>
             </div>
         </div>

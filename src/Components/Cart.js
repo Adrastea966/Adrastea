@@ -1,7 +1,7 @@
 import React from "react";
 import { CartContext } from "./CartContext";
 import { useContext } from "react";
-import { ContenedorPrincipal, TitleCart, ContentCart, Product, ProductDetail, ImageCart, Details, PriceDetail, ProductAmountContainer, ProductAmount, ProductPrice, Hr } from './styles';
+import { ContenedorPrincipal, NombreCarrito, ContentCart, Product, ProductDetail, ImageCart, Details, PriceDetail, ProductAmountContainer, ProductAmount, ProductPrice, Hr } from './styles';
 import '../styles/StylesEcommerce.css';
 
 
@@ -11,10 +11,10 @@ const Cart = () => {
     console.log(test.cartList)
     return (
         <ContenedorPrincipal>
-            <TitleCart>TU CARRITO</TitleCart>
+            <NombreCarrito>TU CARRITO</NombreCarrito>
             {
                 test.cartList.length > 0 && test.cartList.map(data => (
-                    <ContentCart>
+            <ContentCart>
                     <Product>
                     <ProductDetail>
                         <ImageCart src={data.image} />
@@ -29,16 +29,15 @@ const Cart = () => {
                     </ProductDetail>
                     <PriceDetail>
                         <ProductAmountContainer>
-                        <ProductAmount>{"UNIDADES: "+data.quantity}</ProductAmount>
+                        <ProductAmount>{data.quantity+" UNIDADES"}</ProductAmount>
                         </ProductAmountContainer>
-                        <ProductPrice> {data.price+" USD"} </ProductPrice>
+                        <ProductPrice> {data.price * data.quantity+" USD"}</ProductPrice>
                     </PriceDetail>
                     </Product>
-                   
             </ContentCart>
                 ))
             }
-            <button type="button" onClick={() => clearCart()}  >Vacíar carrito</button>
+            <button type="button" onClick={() => clearCart()}>Vacíar carrito</button>
            
         </ContenedorPrincipal>
     );
