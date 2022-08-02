@@ -50,12 +50,14 @@ const ContenidoNombreVestido = styled.div`
 const ContenedorPrincipal = styled.div`
     padding: 10rem;
     margin: 0 auto;
+    height: 300rem;
 `;
 
 const NombreCarrito = styled.h1`
     font-weight: 500;
     text-align: center;
     margin-bottom: 10rem;
+    font-size: 3em;
 `;
 
 const ContentCart = styled.div`
@@ -102,7 +104,7 @@ const ProductPrice = styled.div`
 
 const ProductAmountContainer = styled.div`
     display: flex;
-    align-items: center;
+    flex-direction: column;
     margin: 20px;
 `;
 
@@ -111,6 +113,13 @@ const ProductAmount = styled.div`
     margin: 5px;
 `;
 
+const  ContenedorPadreOrdenCompra = styled.div`
+    display:flex;
+    justify-content: space-between;
+    
+    
+`;
 
 
-export {DressesContainer, Info, InfoContainer, Contenido, ContenidoNombreVestido, ContenedorPrincipal, ProductAmountContainer, ProductAmount, NombreCarrito, ContentCart, Product, ProductDetail, ImageCart, Details, PriceDetail, ProductPrice   } 
+
+export {DressesContainer,  ContenedorPadreOrdenCompra, Info, InfoContainer, Contenido, ContenidoNombreVestido, ContenedorPrincipal, ProductAmountContainer, ProductAmount, NombreCarrito, ContentCart, Product, ProductDetail, ImageCart, Details, PriceDetail, ProductPrice   } 
