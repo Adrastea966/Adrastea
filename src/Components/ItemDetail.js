@@ -2,7 +2,9 @@ import React, {useState, useContext} from "react";
 import '../styles/StylesEcommerce.css';
 import ItemCount from "./ItemCount";
 import {Link} from "react-router-dom";
+import Swal from "sweetalert2"
 import { CartContext } from "./CartContext";
+
 
 const ItemDetail = ({data}) => {
 
@@ -12,8 +14,8 @@ const ItemDetail = ({data}) => {
 
     const onAdd = (quantity) => {
         quantity > 0
-            ? console.log(`Compraste ${quantity} unidades`)
-            : console.log(`Agregue un producto para poder agregar al carrito`);
+            ? Swal.fire("Éxito", `Agregaste ${quantity} unidades a tu carrito. Presiona 'ok' para continuar con tu compra.`, "success")
+            : Swal.fire("Error!", `Debe agregar un producto para poder continuar.`, "error");
             setItemCount(quantity);
         test.addToCart(data, quantity);
     }
@@ -41,7 +43,9 @@ const ItemDetail = ({data}) => {
                         )
                         : 
                         (<Link to="/cart">
-                             <button className="itemCheckout">Finalizar compra</button>
+                            <div className="item-checkout-container">
+                                <button className="item-checkout">Ver carrito</button>
+                            </div>
                          </Link>)}
                 </div>
             </div>

@@ -105,7 +105,7 @@ const ProductPrice = styled.div`
 const ProductAmountContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin-left: 50rem;
 `;
 
 const ProductAmount = styled.div`
@@ -116,10 +116,21 @@ const ProductAmount = styled.div`
 const  ContenedorPadreOrdenCompra = styled.div`
     display:flex;
     justify-content: space-between;
-    
-    
 `;
 
+const ProductFinal = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.5em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 8.7rem;
+`
 
 
-export {DressesContainer,  ContenedorPadreOrdenCompra, Info, InfoContainer, Contenido, ContenidoNombreVestido, ContenedorPrincipal, ProductAmountContainer, ProductAmount, NombreCarrito, ContentCart, Product, ProductDetail, ImageCart, Details, PriceDetail, ProductPrice   } 
+
+
+export {DressesContainer,  ContenedorPadreOrdenCompra, Info, 
+InfoContainer, Contenido, ContenidoNombreVestido, ContenedorPrincipal, 
+ProductAmountContainer, ProductAmount, NombreCarrito, ContentCart, Product, 
+ProductDetail, ImageCart, Details, PriceDetail, ProductPrice, ProductFinal} 

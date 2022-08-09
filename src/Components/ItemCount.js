@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import '../styles/StylesEcommerce.css';
 
+
 // Función para añadir más cantidad de productos y agregar al carrito
 const ItemCount = ({initial, stock, onAdd}) => {
     const  [counter, setCounter] = useState(initial)
