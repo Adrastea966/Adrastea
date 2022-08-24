@@ -2,6 +2,8 @@
 ### Alumna: Eliana Ballian.
 ### Comisión: 31225.
 
+https://user-images.githubusercontent.com/101229881/186442835-c2eb8ba0-61a4-4c72-a457-eebb942ebc65.mp4
+
 ## ¡¡Bienvenidos a mi proyecto!! los invito a leer como lo fui planificando y todo lo que usé para lograrlo 💖
 
 Este proyecto tiene el objetivo de simular un ecommerce, una tienda online de ropa. 
