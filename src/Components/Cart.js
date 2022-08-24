@@ -4,9 +4,8 @@ import { useContext } from "react";
 import {Link} from "react-router-dom";
 import { getFirestore, addDoc, collection } from "firebase/firestore";
 import Swal from "sweetalert2"
-import { ContenedorPrincipal,  NombreCarrito, ContentCart, Product, ProductDetail, ImageCart, Details, PriceDetail, ProductAmountContainer, ProductAmount, ProductFinal } from './styles';
-import '../styles/StylesEcommerce.css';
-
+import { ContenedorPrincipal,  NombreCarrito, ContentCart, Product, ProductDetail, ImageCart, Details, PrecioDetalle, DatosProductoContainer, DatosProducto, ProductFinal } from './styles';
+import "../styles/StylesEcommerce.css";
 
 const Cart = () => {
     const {removeItem, clearCart, cartList, totalPrice } =useContext(CartContext)
@@ -33,7 +32,6 @@ const Cart = () => {
         test.clearCart()
     }
 
-
     if (cartList.length === 0){
         return (
             <div className="contenedor-carrito-vacio">No hay elementos en tu carrito.
@@ -41,8 +39,6 @@ const Cart = () => {
             </div>
         )
     }
-
-    
 
     return (
         <ContenedorPrincipal>
@@ -52,9 +48,9 @@ const Cart = () => {
                 <button className="btn-vaciar" type="button" onClick={() => clearCart()}>Vacíar carrito</button>
             </div>
            
-        
             {   
-                
+            
+            //Mapeo para mostrar los productos del carrito  
                 test.cartList.length > 0 && test.cartList.map(data => (
             <> 
                 <ContentCart>
@@ -64,22 +60,21 @@ const Cart = () => {
                             <Details>
                                 <span>
                                     <b>Producto:</b> {data.title}
-                                    </span>
-                                    <span>
-                                        <button type="button" onClick={() => removeItem(data.id)}>eliminar</button>
-                                    </span>
+                                </span>
+                                <div className="btn-eliminar-carrito-contain">
+                                    <button className="btn-eliminar-carrito" type="button" onClick={() => removeItem(data.id)}>Eliminar</button>
+                                </div>
                             </Details>
                         </ProductDetail>
-                        <PriceDetail>
-                                <ProductAmountContainer>
-                                    <ProductAmount>{data.quantity + " UNIDADES"}</ProductAmount>
-                                    <ProductAmount><p>Precio unitario: {data.price + " USD"} </p> </ProductAmount>
-                                    <ProductAmount><p>Subtotal: {data.quantity * data.price+" USD"}</p> </ProductAmount>
-                                </ProductAmountContainer>
-                        </PriceDetail>
+                        <PrecioDetalle>
+                                <DatosProductoContainer>
+                                    <DatosProducto>{data.quantity + " UNIDADES"}</DatosProducto>
+                                    <DatosProducto><p>Precio unitario: {data.price + " USD"} </p> </DatosProducto>
+                                    <DatosProducto><p>Subtotal: {data.quantity * data.price+" USD"}</p> </DatosProducto>
+                                </DatosProductoContainer>
+                        </PrecioDetalle>
                     </Product>
                 </ContentCart>
-                
                 </>
                 ))
             }
@@ -87,13 +82,8 @@ const Cart = () => {
             <hr></hr>
             <ProductFinal><p>TOTAL: {totalPrice()*1.21+" USD"}</p> </ProductFinal>
             <div className="container-confirmar"><button onClick={handleClick} className="btn-confirmar-compra" type="button" >Confirmar compra</button></div>
-            
-           
-           
         </ContenedorPrincipal>
-    );
-
-    
+    ); 
 }
 
 export default Cart;

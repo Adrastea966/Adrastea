@@ -1,8 +1,8 @@
 import React from "react";
-import '../styles/StylesEcommerce.css';
+import "../styles/StylesEcommerce.css";
 import { CartContext } from "./CartContext";
 import { useContext } from "react";
-import { Badge } from '@mui/material';
+import { Badge } from "@mui/material";
 
 const CartWidget = ()=> {
     const {totalProducts} =useContext(CartContext)

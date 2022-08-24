@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from "react";
-import '../styles/StylesEcommerce.css';
+import "../styles/StylesEcommerce.css";
 import ItemList from "./ItemList";
 import {useParams} from "react-router";
 import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
-
 
 // Función para renderizar los productos
 export const ItemListContainer = () => {

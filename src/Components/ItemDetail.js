@@ -1,16 +1,14 @@
 import React, {useState, useContext} from "react";
-import '../styles/StylesEcommerce.css';
+import "../styles/StylesEcommerce.css";
 import ItemCount from "./ItemCount";
 import {Link} from "react-router-dom";
 import Swal from "sweetalert2"
 import { CartContext } from "./CartContext";
 
-
 const ItemDetail = ({data}) => {
 
     const [itemCount, setItemCount] = useState(0);
     const test = useContext(CartContext)
-
 
     const onAdd = (quantity) => {
         quantity > 0
@@ -50,8 +48,7 @@ const ItemDetail = ({data}) => {
                 </div>
             </div>
         </div>
-        </div>
-        
+        </div>  
     );
 }
 

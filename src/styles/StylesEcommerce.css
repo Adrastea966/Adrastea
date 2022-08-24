@@ -47,10 +47,6 @@ h2{
     padding-top: 1rem;
 }
 
-.img-logo{
-    width: 4rem;
-}
-
 .menu{
     display:flex;
     align-items: center;
@@ -76,7 +72,6 @@ h2{
     align-items: center;
     width: 5rem;
 }
-
 
 /* Footer styles */
 .container-footer{
@@ -170,6 +165,13 @@ h2{
    font-weight: 600;
 }
 
+.btn-detail{
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid rgba(255, 255, 255, 0) 0.5rem;
+    color: white;
+}
+
 /* ItemDetail styles */
 .container-details-page{
     display:flex;
@@ -243,9 +245,7 @@ h2{
     font-size: 1.2rem;
 }
 
-
 /* Cart styles */
-
 .cart{
     height: 80rem;
     display:flex;
@@ -314,15 +314,35 @@ h2{
 }
 
 .container-confirmar :hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 218, 29);
     color: rgb(255, 255, 255);
     transition: ease-in-out 0.3s;
+    border: solid rgb(0, 218, 29);
 }
 
 .btn-confirmar-compra{
     cursor: pointer;
     padding: 1.5rem;
-    border: solid black 0.1rem;
+    border: solid rgb(0, 218, 29) 0.1rem;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+}
+
+.btn-eliminar-carrito{
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border: solid rgb(255, 0, 0) 0.1rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.btn-eliminar-carrito-contain{
+    margin-bottom: 2rem;
+}
+
+.btn-eliminar-carrito-contain :hover {
+    border: solid rgb(255, 0, 0) 0.1rem;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 0.3s;
 }

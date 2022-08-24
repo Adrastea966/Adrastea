@@ -1,6 +1,5 @@
 import React from "react";
-import '../styles/StylesEcommerce.css';
-
+import "../styles/StylesEcommerce.css";
 
 const Footer = () => {
 

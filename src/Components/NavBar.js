@@ -1,6 +1,7 @@
 import React from "react";
-import '../styles/StylesEcommerce.css';
-import CartWidget from './CartWidget';
+import "../styles/StylesEcommerce.css";
+import CartWidget from "./CartWidget";
+import logo from "../logo.svg"
 import {Link} from "react-router-dom";
 
 // Función para renderizar el navbar 
@@ -8,6 +9,7 @@ const NavBar = ()=> {
     return(
         <div className="container-navbar">
             <div className="logo">
+                <img src={logo} />
                 <Link to="/"><h2>ADRASTEA</h2></Link>
             </div>
             <div className="menu">

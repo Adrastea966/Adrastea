@@ -1,7 +1,7 @@
 import React from 'react';
 import { CartContext } from "./CartContext";
 import { useContext } from "react";
-import '../styles/StylesEcommerce.css';
+import "../styles/StylesEcommerce.css";
 
 const ItemCart = ({ data }) => {
 

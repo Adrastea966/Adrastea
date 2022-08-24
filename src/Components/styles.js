@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-
+//Home - contenido productos
 const DressesContainer = styled.div`
     padding: 5rem;
     margin-top: 10rem;
@@ -70,50 +70,50 @@ const ContentCart = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 10rem;
 `;
 
 const ProductDetail = styled.div`
   display: flex;
+  font-size: 1.3em;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 `;
 
 const ImageCart = styled.img`
-  width: 200px;
-  
+  width: 20rem;
 `;
 
 const Details = styled.div`
-  padding: 20px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 `;
 
-const PriceDetail = styled.div`
-  flex: 1;
+const PrecioDetalle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
 
-const ProductPrice = styled.div`
-  font-size: 30px;
+const ProductoDetalle = styled.div`
+  font-size: 3em;
   font-weight: 200;
 `;
 
-const ProductAmountContainer = styled.div`
+const DatosProductoContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 50rem;
 `;
 
-const ProductAmount = styled.div`
-    font-size: 24px;
-    margin: 5px;
+const DatosProducto = styled.div`
+    font-size: 2.4em;
+    margin: 0.5rem;
 `;
 
-const  ContenedorPadreOrdenCompra = styled.div`
+const ContenedorPadreOrdenCompra = styled.div`
     display:flex;
     justify-content: space-between;
 `;
@@ -127,10 +127,7 @@ const ProductFinal = styled.div`
     margin-right: 8.7rem;
 `
 
-
-
-
 export {DressesContainer,  ContenedorPadreOrdenCompra, Info, 
 InfoContainer, Contenido, ContenidoNombreVestido, ContenedorPrincipal, 
-ProductAmountContainer, ProductAmount, NombreCarrito, ContentCart, Product, 
-ProductDetail, ImageCart, Details, PriceDetail, ProductPrice, ProductFinal} 
+DatosProductoContainer, DatosProducto, NombreCarrito, ContentCart, Product, 
+ProductDetail, ImageCart, Details, PrecioDetalle, ProductoDetalle, ProductFinal} 
