@@ -8,6 +8,9 @@ const Footer = () => {
             <div className="copy-footer">
                 <p>Todos los derechos reservados&copy; 2022</p>
             </div>
+            <div className="contacto">
+                <p>tel: +54 11 2401-3978</p>
+            </div>
         </div>
     );
 }

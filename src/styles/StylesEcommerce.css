@@ -91,6 +91,14 @@ h2{
     padding-right: 60px;
 }
 
+.contacto{
+    color: white;
+    font-size: 1.6em;
+    display:flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 /* Banner styles */
 .banner{
     overflow: hidden;
