@@ -18,6 +18,10 @@ const Info = styled.div`
     position: absolute;
     transition: all 0.5s ease;
     background-color: rgba(2, 2, 2, 0.538);
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content:center;
+    align-items:center;
 `;
 
 const InfoContainer = styled.div`
@@ -41,9 +45,11 @@ const Contenido = styled.div`
     transition: all 0.6s ease;
 `;
 
-const ContenidoNombreVestido = styled.div`
+const ContenidoNombreVestido = styled.div`  
+    width:30rem;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
+    order:1;
 `
 
 //Carrito

@@ -1,12 +1,14 @@
-# Proyecto de React - ADRASTEA
-### Alumna: Eliana Ballian.
-### Comisión: 31225.
+# Proyecto Ecommerce | ADRASTEA 💜
 
-## ¡¡Bienvenidos a mi proyecto!! los invito a leer como lo fui planificando y todo lo que usé para lograrlo 💖
+## ¿De qué trata el proyecto?
 
-Este proyecto tiene el objetivo de simular un ecommerce, una tienda online de ropa. 
-Mi idea es vender vestidos de alta costura, que sean fantasiosos pero elegantes y delicados a la vez, un punto medio entre lo clásico y lo extravagante. Por ello decidí llamar la tienda "ADRASTEA", una diosa de la mitología griega, que a la vez es el nombre de unas de las lunas de Júpiter, de aquí viene la unión entre lo fantasioso (con temáticas de espacio) y lo delicado (haciendo referencia a la mitología griega), este concepto también es acompañado con los colores elegidos (tonalidades de beige con tonalidades del azul), la tipografía y las imagenes. 
-Cada vestido tiene asignado un nombre, los vestidos de eventos poseen nombres de diosas griegas y romanas. En cambio, los vestidos de bodas poseen nombres de flores blancas. Cada cuál tiene asignado un nombre en relación con su significado y el diseño del vestido.
+Este Proyecto surge de mi experiencia con ReactJS, html, css, javascript y Firebase. Es un ecommerce que simula una tienda de vestidos de alta gama. Su enfoque se centra en brindar una experiencia de compra virtual única, con un toque profesional y elegante.
+
+Una de sus características más destacadas es la funcionalidad de carrito de compra, permitiendo a los usuarios agregar vestidos, gestionar su selección y completar la compra de manera fluida. Esta característica agrega una dimensión interactiva y práctica a la experiencia de compra en línea.
+
+El uso de tecnologías avanzadas como ReactJS y Firebase garantiza una interfaz dinámica y receptiva. Los componentes se han diseñado para ser altamente reutilizables, lo que demuestra mi enfoque en la eficiencia del desarrollo. Este proyecto no solo se trata de tecnología, sino también de proporcionar a los usuarios una experiencia realista y agradable al explorar una colección virtual de vestidos profesionales.
+
+En resumen, esta iniciativa fusiona la creatividad y las habilidades técnicas para presentar un ecommerce atractivo y funcional. Desde la simulación de una tienda de vestidos hasta la implementación del carrito de compra, cada aspecto del proyecto está diseñado para ofrecer una experiencia de usuario cautivadora y un vistazo al mundo del desarrollo web moderno.
 
 ## Dependecias instaladas (externas a las clases)
 
@@ -14,15 +16,8 @@ Para este proyecto decidí usar una dependencia muy útil para poder añadir est
 
 - styled-components
 
-## Decisiones tomadas hasta el momento:
+## Aclaraciones
 
-- Cree un componente llamado Home, y ahí incluí mi array de objetos, los que solo se van a renderizar en el inicio de la página. Esto lo hice aparte y no usé el ItemListContainer porque tengo un banner y algunas imagenes en svg incluidas, que solo quiero mostrar en el HOME.
-
-- Cree una hoja de estilos sola para los diseños de todos mis componentes. Quería crear una con un nombre descriptivo y eliminé la anterior, ya que esos estilos no se aplicaban. 
-
-- Todas las imagenes que se renderizan en mi proyecto están subidas en la nube en "Cloudinary", para que mi proyecto esté lo más ligero posible.
-
-- Tengo un archivo llamado "styles", en donde le agrego los diseños a mis contenedores con styled-components.
+Es importante aclarar que este es un proyecto que pone en demostración mis habilidades con tecnologías como javascript, react y firebase. No es un proyecto que se destaque por su diseño; por su lado estético, ni tampoco es un sitio que cuente con diseño responsive.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-

@@ -12,6 +12,7 @@ html {
     font-size: 62.5%;
     color: black;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
@@ -28,6 +29,7 @@ h2{
 }
 
 /* Navbar styles */
+/* Estilos para pantallas grandes */
 .container-navbar{
     top: 0;
     display:flex;
@@ -101,13 +103,13 @@ h2{
 
 /* Banner styles */
 .banner{
-    overflow: hidden;
+    width: 100vw;
     margin-bottom: 20rem;
+   
 }
 
 .favoritos{
-    width: 100rem;
-    margin-left: 20rem;
+    width:80vw;
 }
 
 /* ItemCount styles */
@@ -176,8 +178,15 @@ h2{
 .btn-detail{
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0);
-    border: solid rgba(255, 255, 255, 0) 0.5rem;
+    border: 1px solid white;
     color: white;
+    font-size: 1.5em;
+    transition: .3s ease-in-out;
+}
+
+.btn-detail:hover{
+    background-color: white;
+    color: black;
 }
 
 /* ItemDetail styles */

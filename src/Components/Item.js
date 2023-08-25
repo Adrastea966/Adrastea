@@ -12,7 +12,7 @@ const Item = ({info}) => {
             </div>
             <Info>
                 <div className="btn-detail-contain">
-                   <Link to={`/item/${info.id}`}><button className="btn-detail" type="button">Detalle</button></Link> 
+                   <Link to={`/item/${info.id}`}><button className="btn-detail" type="button">Agregar al carrito</button></Link> 
                 </div>
                 <ContenidoNombreVestido>
                     <img src={info.img} />
